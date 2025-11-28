@@ -10,6 +10,7 @@
     font-size: 63px;
     color: #16A249;
     opacity: 0.5;
+    text-align: center;
 }
 .main-sec .logo-custom{
     display: flex;
@@ -21,4 +22,10 @@
     height: auto;
     opacity: 0.5;
     margin: auto;
+}
+
+@media (max-width: 950px) {
+    .main-sec h1{
+        font-size: 42px;
+    }
 }
