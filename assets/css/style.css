@@ -1680,6 +1680,10 @@ a:hover .cursor {
     .hero_sec .slide_desc{
         font-size: 16px;
     }
+    .hero_sec .btn-ele a{
+        font-size: 14px !important;
+        padding: 12px 12px !important;
+    }
     .hero_sec .swiper-pagination{
         width: 100% !important;
         flex-flow: row nowrap;
@@ -1714,11 +1718,15 @@ a:hover .cursor {
         border-top: 1px solid #333;
     }
     .navbar .drowpdown-nav{
-        top: 350px;
+        top: 380px;
         z-index: 10001;
         background: #020817;
         box-shadow: unset;
         padding: 16px 24px;
+        transition: all 100ms ease;
+    }
+    .navbar.scrolled .drowpdown-nav{
+        top: 350px;
     }
     .navbar .drowpdown-nav a{
         font-size: 14px;
@@ -1801,29 +1809,29 @@ a:hover .cursor {
         font-size: 14px;
     }
 
-.sec-typs .card{
-    align-items: flex-start;
-}
-.sec-typs .card .main-tit{
-    padding-bottom: 6px;
-}
-.sec-typs .card .row{
-    padding: 6px 0px;
-}
-.sec-typs .card-container,
-.sec-typs .card {
-    width: 100%;
-}
-.sec-typs .card {
-    top: 200px;
-    height: 390px;
-}
-.sec-typs .card .bx{
-    padding: 0px 16px !important;
-}
-.main-sec .head h1{
-    font-size: 24px;
-}
+    .sec-typs .card{
+        align-items: flex-start;
+    }
+    .sec-typs .card .main-tit{
+        padding-bottom: 6px;
+    }
+    .sec-typs .card .row{
+        padding: 6px 0px;
+    }
+    .sec-typs .card-container,
+    .sec-typs .card {
+        width: 100%;
+    }
+    .sec-typs .card {
+        top: 200px;
+        height: 390px;
+    }
+    .sec-typs .card .bx{
+        padding: 0px 16px !important;
+    }
+    .main-sec .head h1{
+        font-size: 24px;
+    }
 
     .footer{
         padding: 40px 16px 16px;
