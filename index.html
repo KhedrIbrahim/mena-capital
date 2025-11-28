@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mena Capital</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&amp;family=Big+Shoulders+Display:wght@700&amp;family=Inter:wght@400;700&amp;family=Karla:wght@300;400;700&amp;family=Kumbh+Sans:wght@400;700&amp;family=Lexend+Deca&amp;family=Open+Sans&amp;family=Outfit:wght@300;400;600;700&amp;family=Poppins:wght@200;300;400;500;600;700;800;900&amp;family=Red+Hat+Display:wght@500;700;900&amp;family=Rubik:wght@400;500;700&amp;family=Spartan:wght@400;500;700&amp;family=Work+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="logo"><a href="#"><img src="assets/img/logo-mena-1.png" alt="logo"></a></div>
+            <div class="nav-links">
+                <a href="#" class="nav-active mov-link lnk" ele-to-scroll="marketData">Markets</a>
+                <a href="#" class="mov-link lnk" ele-to-scroll="accountTypes">Accounts</a>
+                <a href="coming-soon/" class="lnk">Platforms</a>
+                <a href="#" class="mov-link lnk" ele-to-scroll="AboutMena">About</a>
+                <a href="coming-soon/" class="lnk">Contact</a>
+                <a hove-open-dropdown="dropDownLinks" class="dropdown-trigger lnk">Pages <i class="bi bi-arrow-down-short"></i></a>
+            </div>
+            <div class="nav-actions">
+                <a class="btn-st-two outline" href="coming-soon/">Login</a>
+                <a class="btn-st-one primary" href="coming-soon/"><span class="icon"><i class="bi bi-headset"></i></span> <span class="txt mob-non">24/7</span></a>
+                <a class="btn-st-one primary" href="coming-soon/">Start Trading</a>
+            </div>
+            <i class="bi bi-list menu-toggle"></i>
+
+        </div>
+
+        <section class="ticker-bar">
+            <div class="cont">
+                <div class="ticker_bar_sec">
+                    <div class="marketTickerSwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="https://flagcdn.com/w20/eu.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">EUR/USD</div>
+                                <div class="ticker_price wht">1.32</div>
+                                <div class="ticker_price rand_color">1.15155</div>
+                            </div>
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="https://flagcdn.com/w20/gb.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">GBP/USD</div>
+                                <div class="ticker_price wht">79.123</div>
+                                <div class="ticker_price rand_color">1.3066</div>
+                            </div>
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="assets/img/icons/water-and-oil.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">Oil</div>
+                                <div class="ticker_price wht">13.233</div>
+                                <div class="ticker_price rand_color">59.78</div>
+                            </div>
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="assets/img/icons/apple.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">Apple</div>
+                                <div class="ticker_price wht">49.64</div>
+                                <div class="ticker_price rand_color">268.56</div>
+                            </div>
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="assets/img/icons/bitcoin.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">Bitcoin</div>
+                                <div class="ticker_price wht">59.64</div>
+                                <div class="ticker_price rand_color">91818.60</div>
+                            </div>
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="assets/img/icons/coin.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">Gold</div>
+                                <div class="ticker_price wht">79.123</div>
+                                <div class="ticker_price rand_color">4068.17</div>
+                            </div>
+
+                            <div class="swiper-slide ticker_item">
+                                <div class="icn">
+                                    <img src="assets/img/icons/eth-coin.png" class="ticker_icon">
+                                </div>
+                                <div class="ticker_pair">ETH</div>
+                                <div class="ticker_price wht">63.233</div>
+                                <div class="ticker_price rand_color">91818.60</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Dropdown Menu -->
+        <div class="drowpdown-nav" id="dropDownLinks">
+        <div class="dropdown-column">
+            <a href="coming-soon/">Page 1</a>
+            <a href="coming-soon/">Page 2</a>
+        </div>
+        <div class="dropdown-column">
+            <a href="coming-soon/">Page 3</a>
+            <a href="coming-soon/">Page 4</a>
+        </div>
+        <div class="dropdown-column">
+            <a href="coming-soon/">Page 4</a>
+            <a href="coming-soon/">Page 5</a>
+        </div>
+        </div>
+
+    </nav>
+
+    <section class="hero_sec">
+        <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide_content">
+                        <div class="main-cont">
+                            <div class="slide_title">Trade Forex with Confidence</div>
+                            <div class="slide_desc">Mena Capital brings modern trading tools and deep market analysis with a powerful and secure trading experience.</div>
+                            <div class="btn-row">
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Book a Demo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide_content">
+                        <div class="main-cont">
+                            <div class="slide_title">Lightning‑Fast Execution</div>
+                            <div class="slide_desc">Execute trades with institutional‑grade speed designed for professional and retail traders.</div>
+                            <div class="btn-row">
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Book a Demo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="slide_content">
+                        <div class="main-cont">
+                            <div class="slide_title">Smart Trading Technology</div>
+                            <div class="slide_desc">Empowering you with cutting‑edge tools, AI insights, and a seamless trading workflow.</div>
+                            <div class="btn-row">
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Book a Demo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_content">
+                        <div class="main-cont">
+                            <div class="slide_title">Lightning‑Fast Execution</div>
+                            <div class="slide_desc">Execute trades with institutional‑grade speed designed for professional and retail traders.</div>
+                            <div class="btn-row">
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                                <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Book a Demo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="video-back">
+                <video autoplay muted loop playsinline>
+                <source src="assets/img/video-1.mp4" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="account-sec main-sec no-padding market-sec" id="marketData">
+        <div class="cont">
+            <div class="head">
+                <h1 class="sec-heading txt-grad">Live Market Data</h1>
+                <p class="sec-sub-title">Real-time pricing with ultra-low spreads and lightning-fast execution</p>
+            </div>
+            <div class="bx-cont">
+                <div class="cat-tab btns-markt">
+                    <button class="btn-st-one primary">Forex</button>
+                    <button class="btn-st-two outline">Precious Metals</button>
+                    <button class="btn-st-two outline">Energies</button>
+                    <button class="btn-st-two outline">Equity Indices</button>
+                    <button class="btn-st-two outline">Stock CFDs</button>
+                </div>
+                <div class="market-table">
+                    <div class="container">
+                        <table class="table-markt">
+                            <thead>
+                                <tr>
+                                    <th>Symbol</th>
+                                    <th>Price</th>
+                                    <th>Change</th>
+                                    <th>Spread</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>EUR/USD</td>
+                                    <td>1.0842</td>
+                                    <td><span class="green"><i class="bi bi-graph-up-arrow"></i> +0.11%</span></td>
+                                    <td>0.6</td>
+                                </tr>
+                                <tr>
+                                    <td>GBP/USD</td>
+                                    <td>1.2654</td>
+                                    <td><span class="red"><i class="bi bi-graph-down"></i> -0.06%</span></td>
+                                    <td>0.8</td>
+                                </tr>
+                                <tr>
+                                    <td>USD/JPY</td>
+                                    <td>149.82</td>
+                                    <td><span class="green"><i class="bi bi-graph-down-arrow"></i> +0.30%</span></td>
+                                    <td>0.7</td>
+                                </tr>
+                                <tr>
+                                    <td>AUD/USD</td>
+                                    <td>0.6723</td>
+                                    <td><span class="green"><i class="bi bi-graph-up-arrow"></i> +0.22%</span></td>
+                                    <td>0.9</td>
+                                </tr>
+                                <tr>
+                                    <td>USD/CAD</td>
+                                    <td>0.6142</td>
+                                    <td><span class="red"><i class="bi bi-graph-down"></i> -0.02%</span></td>
+                                    <td>0.8</td>
+                                </tr>
+                                <tr>
+                                    <td>NZD/USD</td>
+                                    <td>1.3567</td>
+                                    <td><span class="green"><i class="bi bi-graph-up-arrow"></i> +0.11%</span></td>
+                                    <td>1.2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    
+    <section id="card-pin-section" class="sec-typs">
+        <div class="card-container">
+            <div class="account-sec main-sec no-padding" id="accountTypes">
+                <div class="cont">
+                    <div class="head">
+                        <h1 class="sec-heading txt-grad">Trading Account Types</h1>
+                        <p class="sec-sub-title">Choose the perfect account for your trading style. From Premier to Institutional accounts, find the right fit for your investment level.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-5">
+                <div class="card-content">
+                    <div class="bx">
+                        <div class="main-tit txt-grad">Infinity Cent</div>
+                        <div class="row"><span class="key">Minimum Deposit</span> <span class="val">$1001 To $50,000</span></div>
+                        <div class="row"><span class="key">Average Spread</span> <span class="val green">Raw Spread</span></div>
+                        <div class="row"><span class="key">Commission</span> <span class="val">Yes</span></div>
+                        <div class="row"><span class="key">Leverage</span> <span class="val">Up to 1:300</span></div>
+                        <div class="row"><span class="key">Stop Out</span> <span class="val">30%</span></div>
+                        <div class="row"><span class="key">Swap</span> <span class="val">Market Raw</span></div>
+                        <div class="row"><span class="key">One Click Trading</span> <span class="val green">Yes</span></div>
+                        <div class="row last"><span class="key">Free Fund Withdraw</span> <span class="val green">Yes</span></div>
+                        <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-4 recommended">
+                <div class="card-content">
+                    <div class="bx">
+                        <div class="main-tit txt-grad">Cent</div>
+                        <div class="row"><span class="key">Minimum Deposit</span> <span class="val">$1001 To $50,000</span></div>
+                        <div class="row"><span class="key">Average Spread</span> <span class="val green">Raw Spread</span></div>
+                        <div class="row"><span class="key">Commission</span> <span class="val">Yes</span></div>
+                        <div class="row"><span class="key">Leverage</span> <span class="val">Up to 1:300</span></div>
+                        <div class="row"><span class="key">Stop Out</span> <span class="val">30%</span></div>
+                        <div class="row"><span class="key">Swap</span> <span class="val">Market Raw</span></div>
+                        <div class="row"><span class="key">One Click Trading</span> <span class="val green">Yes</span></div>
+                        <div class="row last"><span class="key">Free Fund Withdraw</span> <span class="val green">Yes</span></div>
+                        <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-3">
+                <div class="card-content">
+                    <div class="bx">
+                        <div class="main-tit txt-grad">Professional</div>
+                        <div class="row"><span class="key">Minimum Deposit</span> <span class="val">$1001 To $50,000</span></div>
+                        <div class="row"><span class="key">Average Spread</span> <span class="val green">Raw Spread</span></div>
+                        <div class="row"><span class="key">Commission</span> <span class="val">Yes</span></div>
+                        <div class="row"><span class="key">Leverage</span> <span class="val">Up to 1:300</span></div>
+                        <div class="row"><span class="key">Stop Out</span> <span class="val">30%</span></div>
+                        <div class="row"><span class="key">Swap</span> <span class="val">Market Raw</span></div>
+                        <div class="row"><span class="key">One Click Trading</span> <span class="val green">Yes</span></div>
+                        <div class="row last"><span class="key">Free Fund Withdraw</span> <span class="val green">Yes</span></div>
+                        <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card-2">
+                <div class="card-content">
+                    <div class="bx">
+                        <div class="main-tit txt-grad">Elite</div>
+                        <div class="row"><span class="key">Minimum Deposit</span> <span class="val">$1001 To $50,000</span></div>
+                        <div class="row"><span class="key">Average Spread</span> <span class="val green">Raw Spread</span></div>
+                        <div class="row"><span class="key">Commission</span> <span class="val">Yes</span></div>
+                        <div class="row"><span class="key">Leverage</span> <span class="val">Up to 1:300</span></div>
+                        <div class="row"><span class="key">Stop Out</span> <span class="val">30%</span></div>
+                        <div class="row"><span class="key">Swap</span> <span class="val">Market Raw</span></div>
+                        <div class="row"><span class="key">One Click Trading</span> <span class="val green">Yes</span></div>
+                        <div class="row last"><span class="key">Free Fund Withdraw</span> <span class="val green">Yes</span></div>
+                        <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-1">
+                <div class="card-content">
+                    <div class="bx">
+                        <div class="main-tit txt-grad">Artificial Intelligence</div>
+                        <div class="row"><span class="key">Minimum Deposit</span> <span class="val">$1001 To $50,000</span></div>
+                        <div class="row"><span class="key">Average Spread</span> <span class="val green">Raw Spread</span></div>
+                        <div class="row"><span class="key">Commission</span> <span class="val">Yes</span></div>
+                        <div class="row"><span class="key">Leverage</span> <span class="val">Up to 1:300</span></div>
+                        <div class="row"><span class="key">Stop Out</span> <span class="val">30%</span></div>
+                        <div class="row"><span class="key">Swap</span> <span class="val">Market Raw</span></div>
+                        <div class="row"><span class="key">One Click Trading</span> <span class="val green">Yes</span></div>
+                        <div class="row last"><span class="key">Free Fund Withdraw</span> <span class="val green">Yes</span></div>
+                        <div class="btn-ele"><a href="coming-soon/" class="btn-st-one primary">Start Trading</a></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+    <section class="cards-section about-sec">
+        <div class="bg-glow">
+            <div class="glow-circle glow-1"></div>
+            <div class="glow-circle glow-2"></div>
+        </div>
+        <div class="sticky-container">
+            <div class="cards-wrapper">
+                <div class="about-sec main-sec no-padding" id="AboutMena">
+                    <div class="cont">
+                        <div class="head">
+                            <h1 class="sec-heading txt-grad">About MENA Capital</h1>
+                            <p class="sec-sub-title">Your trusted partner in financial markets</p>
+                        </div>
+                    </div>
+                    <div class="mena-serv">
+                        <div class="bx">
+                            <div class="val"><span class="main">0.0</span> <span class="unit">pips</span></div>
+                            <div class="key">Pip Spreads</div>
+                        </div>
+                        <div class="bx">
+                            <div class="val"><span class="main">34</span> <span class="unit">ms</span></div>
+                            <div class="key">Avg Execution</div>
+                        </div>
+                        <div class="bx">
+                            <div class="val"><span class="main">3,500+</span> <span class="unit"></span></div>
+                            <div class="key">Instruments</div>
+                        </div>
+                        <div class="bx">
+                            <div class="val"><span class="main">24/7</span> <span class="unit"></span></div>
+                            <div class="key">Support</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 1 -->
+                <div class="card-st card-1">
+                    <div class="card-header">
+                        <span class="card-tag"><i class="bi bi-person-lock"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Secure Trading</h2>
+                        <p class="card-desc">Advanced security protocols and risk management systems to protect your funds and personal data</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-number">01</div>
+                        <button class="card-button">Learn more</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card-st card-2">
+                    <div class="card-header">
+                        <span class="card-tag"><i class="bi bi-clock-history"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Ultra-Fast Execution</h2>
+                        <p class="card-desc">Sub-40ms execution speed with institutional-grade infrastructure and direct market access</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-number">02</div>
+                        <button class="card-button">Learn more</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card-st card-3">
+                    <div class="card-header">
+                        <span class="card-tag"><i class="bi bi-currency-dollar"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Flexible Deposit & Withdrawal Options</h2>
+                        <p class="card-desc">Multiple secure deposit and withdrawal options, including bank cards, e-wallets, and instant bank transfers.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-number">03</div>
+                        <button class="card-button">Learn more</button>
+                    </div>
+                </div>
+                <div class="card-st card-4">
+                    <div class="card-header">
+                        <span class="card-tag"><i class="bi bi-headset"></i></span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">24/7 Support</h2>
+                        <p class="card-desc">Our technical support team is available 24/7 via live chat, email, and phone to assist you anytime.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-number">04</div>
+                        <button class="card-button">Learn more</button>
+                    </div>
+                </div>
+                <div class="mission-box">
+                    <h2>Our Mission</h2>
+                    <p>To democratize access to global financial markets for traders across the MENA region by providing cutting-edge technology, transparent pricing, and exceptional support. We believe every trader deserves institutional-grade tools and execution, regardless of their account size or experience level.</p>
+                    <p><i class="bi bi-shield-check"></i> Committed to transparency, innovation, and trader success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="cont">
+            <div class="footer-top container">
+            <div class="footer-col">
+                <img src="assets/img/logo-mena-1.png" alt="Logo" class="footer-logo">
+                <div class="social-links">
+                <a href="coming-soon/"><i class="bi bi-facebook"></i></a>
+                <a href="coming-soon/"><i class="bi bi-twitter"></i></a>
+                <a href="coming-soon/"><i class="bi bi-instagram"></i></a>
+                <a href="coming-soon/"><i class="bi bi-linkedin"></i></a>
+                <a href="coming-soon/"><i class="bi bi-pinterest"></i></a>
+                <a href="coming-soon/"><i class="bi bi-youtube"></i></a>
+                <a href="coming-soon/"><i class="bi bi-whatsapp"></i></a>
+                </div>
+                <div class="comp-info red">
+                    <p>MENA CAPITAL with License Number 219393 GBC, Regulated in Mauritius with Legal address : 30, St Georges Street 3rd Floor Manor House Port Louis</p>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4 class="txt-grad">Company</h4>
+                <ul>
+                <li><a href="coming-soon/">Home</a></li>
+                <li><a href="coming-soon/">About</a></li>
+                <li><a href="coming-soon/">FAQ</a></li>
+                <li><a href="coming-soon/">Services</a></li>
+                <li><a href="coming-soon/">Blog</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-col">
+                <h4 class="txt-grad">About</h4>
+                <ul>
+                <li><a href="coming-soon/">Contact</a></li>
+                <li><a href="coming-soon/">Why Mena</a></li>
+                <li><a href="coming-soon/">Privacy policy</a></li>
+                <li><a href="coming-soon/">Education Hub</a></li>
+                <li><a href="coming-soon/">T & C</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-col">
+                <h4 class="txt-grad">Other</h4>
+                <ul>
+                    <li><a href="coming-soon/">Sign Up</a></li>
+                    <li><a href="coming-soon/">Login</a></li>
+                    <li><a href="coming-soon/">MetaTrader 5</a></li>
+                <li><a href="coming-soon/">Accounts</a></li>
+                <li><a href="coming-soon/">Market</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-col">
+                <h4 class="txt-grad">Contact Us</h4>
+                <ul class="contact-info">
+                <li><i class="bi bi-telephone-fill"></i> +123 456 7890</li>
+                <li><i class="bi bi-envelope-fill"></i> info@mena-capital.com</li>
+                <li><i class="bi bi-geo-alt-fill"></i> Dubai, United Arab Emirates</li>
+                </ul>
+            </div>
+            </div>
+            <div class="row-padd">
+                <div class="footer-license">
+                <p>Company License #123456789 | Registered in Country</p>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+            <p>&copy; 2025 MENA CAPITAL. All Rights Reserved.</p>
+            </div>
+        
+            <div class="footer-glow"></div>
+        </div>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/general.js"></script>
+</body>
+</html>
